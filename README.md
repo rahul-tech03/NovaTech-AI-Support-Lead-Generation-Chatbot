@@ -7,8 +7,6 @@ A production-style conversational AI agent built using **LangGraph + LangChain**
 * Deterministic lead capture (no extractor / regex / guessing)
 * Tool invocation with strict state validation
 
-This project is designed as an **interview-ready assignment** showcasing real-world agent architecture, clean state management, and modern LangChain best practices.
-
 ---
 
 ## 📌 Problem Statement
