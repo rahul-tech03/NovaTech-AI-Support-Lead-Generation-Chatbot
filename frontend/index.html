@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaTech Solutions — AI Support & Solutions Agent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Main Chat Window -->
+    <main class="chat-wrapper" id="chat-wrapper">
+      <!-- Chat Header -->
+      <header class="chat-header">
+        <div class="brand-info">
+          <div class="avatar-glow">
+            <div class="avatar-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a8 8 0 0 0-8 8c0 3.3 2 6.1 4.9 7.3L8 21l3.9-1.3c.7.2 1.4.3 2.1.3a8 8 0 0 0 8-8 8 8 0 0 0-8-8z"></path>
+                <circle cx="9" cy="10" r="1"></circle>
+                <circle cx="15" cy="10" r="1"></circle>
+              </svg>
+            </div>
+            <span class="status-indicator"></span>
+          </div>
+          <div>
+            <div class="brand-title-row">
+              <h1 class="brand-title">NovaTech Solutions</h1>
+              <span class="badge-tech">Gemini 3.8 Flash</span>
+            </div>
+            <p class="brand-subtitle">AI Support & Lead Specialist • Pune, India</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button id="view-leads-btn" class="btn-icon" title="View Captured Leads (MongoDB Atlas)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>Leads</span>
+          </button>
+          <button id="new-chat-btn" class="btn-icon" title="Reset Conversation">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="1 4 1 10 7 10"></polyline>
+              <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+            </svg>
+            <span>New Chat</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Messages Stream -->
+      <div class="chat-messages" id="chat-messages">
+        <!-- Welcome Banner -->
+        <div class="welcome-card" id="welcome-card">
+          <div class="welcome-header">
+            <div class="welcome-icon">✨</div>
+            <div>
+              <h3>Welcome to NovaTech Solutions</h3>
+              <p>We build enterprise AI chatbots, data analytics, and cloud engineering workflows.</p>
+            </div>
+          </div>
+          <div class="welcome-plans">
+            <div class="plan-chip">
+              <strong>Starter AI Chatbot</strong>
+              <span>₹25,000</span>
+            </div>
+            <div class="plan-chip highlight">
+              <strong>Business AI Assistant</strong>
+              <span>₹60,000 (RAG)</span>
+            </div>
+            <div class="plan-chip">
+              <strong>Enterprise Solution</strong>
+              <span>From ₹1,50,000</span>
+            </div>
+          </div>
+          <p class="quick-title">Suggested prompts to get started:</p>
+          <div class="quick-prompts">
+            <button class="prompt-chip" data-query="What services does NovaTech offer?">
+              💼 What services do you offer?
+            </button>
+            <button class="prompt-chip" data-query="How much does a RAG AI Chatbot cost and what is included?">
+              💰 Chatbot pricing & features
+            </button>
+            <button class="prompt-chip" data-query="I am interested in getting a chatbot for my company. Can you help?">
+              🚀 I'm interested in building a chatbot
+            </button>
+            <button class="prompt-chip" data-query="Where is NovaTech located and what are your business hours?">
+              📍 Location & working hours
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typing Indicator -->
+      <div class="typing-indicator" id="typing-indicator" style="display: none;">
+        <span class="typing-agent" id="typing-agent">NovaTech Agent is thinking</span>
+        <div class="dots">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <!-- Chat Input Area -->
+      <footer class="chat-footer">
+        <form class="chat-input-form" id="chat-form">
+          <input 
+            type="text" 
+            id="user-input" 
+            class="chat-input" 
+            placeholder="Ask a question or request a project quotation..." 
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="send-btn" class="send-btn" title="Send Message">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+        <div class="footer-note">
+          <span>Indicative demonstration pricing • Grounded in NovaTech Knowledge Base • Secured with MongoDB Atlas</span>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Leads Inspection Drawer Modal -->
+    <div class="modal-overlay" id="leads-modal" style="display: none;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title-row">
+            <div class="db-badge">
+              <span class="db-dot"></span>
+              MongoDB Atlas (novatech_db.leads)
+            </div>
+            <h2>Captured Leads</h2>
+          </div>
+          <button class="modal-close" id="close-leads-btn">&times;</button>
+        </div>
+        <div class="modal-body" id="leads-list">
+          <p class="loading-leads">Connecting to MongoDB Atlas...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>

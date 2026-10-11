@@ -1,0 +1,25 @@
+# LangChain & LangGraph Ecosystem
+langchain>=0.2.0
+langchain-core>=0.2.0
+langgraph>=0.2.0
+langchain-google-genai>=1.0.7
+
+# Google Gemini API
+google-generativeai>=0.7.0
+
+# Vector Database (Pinecone)
+pinecone-client>=3.2.0
+
+# Document Database (MongoDB Atlas)
+pymongo[srv]>=4.6.0
+dnspython>=2.6.0
+certifi>=2024.0.0
+
+# Web Framework & API Server
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+python-dotenv>=1.0.1
+
+# Document Processing & PDF Reading
+pypdf>=4.2.0

@@ -1,0 +1,87 @@
+2026-10-10 10:55:58 | INFO    | [IndexKnowledgeBase] Starting NovaTech Knowledge Base indexing process...
+2026-10-10 10:55:58 | INFO    | [IndexKnowledgeBase] Connecting to Pinecone index: 'novetech-knowledge'...
+2026-10-10 10:56:04 | INFO    | [IndexKnowledgeBase] Loaded PDF from 'D:\AI-SUPPORT-AGENT\ChatBot\..\knowledge_base\novatech_knowledge_base.pdf' with 4 pages.
+2026-10-10 10:56:04 | INFO    | [IndexKnowledgeBase] Generating embeddings for 8 document chunks using model 'gemini-text-embedding-001'...
+2026-10-10 11:01:10 | INFO    | [IndexKnowledgeBase] Starting NovaTech Knowledge Base indexing process...
+2026-10-10 11:01:10 | INFO    | [IndexKnowledgeBase] Connecting to Pinecone index: 'novetech-knowledge'...
+2026-10-10 11:01:15 | INFO    | [IndexKnowledgeBase] Loaded PDF from 'D:\AI-SUPPORT-AGENT\ChatBot\..\knowledge_base\novatech_knowledge_base.pdf' with 4 pages.
+2026-10-10 11:01:15 | INFO    | [IndexKnowledgeBase] Generating embeddings for 8 document chunks using model 'gemini-text-embedding-001'...
+2026-10-10 11:11:53 | INFO    | [IndexKnowledgeBase] Starting NovaTech Knowledge Base indexing process...
+2026-10-10 11:11:54 | INFO    | [IndexKnowledgeBase] Connecting to Pinecone index: 'novetech-knowledge'...
+2026-10-10 11:11:55 | INFO    | [IndexKnowledgeBase] Loaded PDF from 'D:\AI-SUPPORT-AGENT\ChatBot\..\knowledge_base\novatech_knowledge_base.pdf' with 4 pages.
+2026-10-10 11:11:55 | INFO    | [IndexKnowledgeBase] Attempting embeddings generation with model 'gemini-embedding-001'...
+2026-10-10 11:12:03 | INFO    | [IndexKnowledgeBase] Successfully generated embeddings using model 'gemini-embedding-001'.
+2026-10-10 11:12:03 | INFO    | [IndexKnowledgeBase] Successfully generated embeddings (dimension: 3072, model: gemini-embedding-001).
+2026-10-10 11:12:05 | INFO    | [IndexKnowledgeBase] Upserting 8 vectors to Pinecone index 'novetech-knowledge'...
+2026-10-10 11:18:19 | INFO    | [IndexKnowledgeBase] Starting NovaTech Knowledge Base indexing process...
+2026-10-10 11:18:19 | INFO    | [IndexKnowledgeBase] Connecting to Pinecone index: 'novetech-knowledge'...
+2026-10-10 11:18:20 | INFO    | [IndexKnowledgeBase] Loaded PDF from 'D:\AI-SUPPORT-AGENT\ChatBot\..\knowledge_base\novatech_knowledge_base.pdf' with 4 pages.
+2026-10-10 11:18:21 | INFO    | [IndexKnowledgeBase] Detected target dimension for Pinecone index 'novetech-knowledge': 768
+2026-10-10 11:18:21 | INFO    | [IndexKnowledgeBase] Attempting embeddings with 'gemini-embedding-001' (output_dimensionality=768)...
+2026-10-10 11:18:26 | INFO    | [IndexKnowledgeBase] Successfully generated embeddings using model 'gemini-embedding-001' with dimension 768.
+2026-10-10 11:18:26 | INFO    | [IndexKnowledgeBase] Successfully generated embeddings (dimension: 768, model: gemini-embedding-001).
+2026-10-10 11:18:27 | INFO    | [IndexKnowledgeBase] Upserting 8 vectors to Pinecone index 'novetech-knowledge'...
+2026-10-10 11:18:30 | INFO    | [IndexKnowledgeBase] Knowledge base indexing successfully completed!
+2026-10-10 11:18:30 | INFO    | [IndexKnowledgeBase] Index verification ready. Knowledge base is live in Pinecone!
+2026-10-10 11:20:11 | INFO    | [IndexKnowledgeBase] Starting NovaTech Knowledge Base indexing process...
+2026-10-10 11:20:11 | INFO    | [IndexKnowledgeBase] Connecting to Pinecone index: 'novetech-knowledge'...
+2026-10-10 11:20:11 | INFO    | [IndexKnowledgeBase] Loaded PDF from 'D:\AI-SUPPORT-AGENT\ChatBot\..\knowledge_base\novatech_knowledge_base.pdf' with 4 pages.
+2026-10-10 11:20:12 | INFO    | [IndexKnowledgeBase] Detected target dimension for Pinecone index 'novetech-knowledge': 3072
+2026-10-10 11:20:12 | INFO    | [IndexKnowledgeBase] Attempting embeddings with 'gemini-embedding-001' (output_dimensionality=3072)...
+2026-10-10 11:20:18 | INFO    | [IndexKnowledgeBase] Successfully generated embeddings using model 'gemini-embedding-001' with dimension 3072.
+2026-10-10 11:20:18 | INFO    | [IndexKnowledgeBase] Successfully generated embeddings (dimension: 3072, model: gemini-embedding-001).
+2026-10-10 11:20:19 | INFO    | [IndexKnowledgeBase] Upserting 8 vectors to Pinecone index 'novetech-knowledge'...
+2026-10-10 11:20:22 | INFO    | [IndexKnowledgeBase] Knowledge base indexing successfully completed!
+2026-10-10 11:20:22 | INFO    | [IndexKnowledgeBase] Index verification ready. Knowledge base is live in Pinecone!
+2026-10-10 11:23:30 | INFO    | [Tools] Executing search_ranker tool for query: 'What are the indicative prices for NovaTech AI chatbots?'
+2026-10-10 11:23:32 | INFO    | [Tools] Connected to Pinecone index: 'novetech-knowledge'
+2026-10-10 11:23:34 | INFO    | [Tools] Target embedding dimension detected from Pinecone: 3072
+2026-10-10 11:23:35 | INFO    | [Tools] Initialized active embedding model: 'gemini-embedding-001' (dim=3072)
+2026-10-10 11:23:38 | INFO    | [Tools] Retrieved 2 matches from Pinecone.
+2026-10-10 11:23:38 | INFO    | [Tools] Executing search_ranker tool for query: 'Can NovaTech build a chatbot using our company documents?'
+2026-10-10 11:23:39 | INFO    | [Tools] Retrieved 2 matches from Pinecone.
+2026-10-10 11:23:39 | INFO    | [Tools] Executing lead_saver tool for lead: name='Alex Mercer', email='alex.mercer@innovatetech.example', service='Business AI Assistant (₹60,000)'
+2026-10-10 11:23:40 | INFO    | [Tools] Connected to MongoDB Atlas: Database='novatech_db', Collection='leads'
+2026-10-10 11:23:45 | ERROR   | [Tools] Error saving lead to MongoDB Atlas: SSL handshake failed: ac-qqgdxwp-shard-00-02.9dumvdg.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:992) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qqgdxwp-shard-00-01.9dumvdg.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:992) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qqgdxwp-shard-00-00.9dumvdg.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:992) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 6ac9d2e358bb82c7669ad022, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-qqgdxwp-shard-00-00.9dumvdg.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qqgdxwp-shard-00-00.9dumvdg.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:992) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qqgdxwp-shard-00-01.9dumvdg.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qqgdxwp-shard-00-01.9dumvdg.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:992) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qqgdxwp-shard-00-02.9dumvdg.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qqgdxwp-shard-00-02.9dumvdg.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:992) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-10-10 11:36:11 | INFO    | [Tools] Executing search_ranker tool for query: 'What are the indicative prices for NovaTech AI chatbots?'
+2026-10-10 11:36:13 | INFO    | [Tools] Connected to Pinecone index: 'novetech-knowledge'
+2026-10-10 11:36:15 | INFO    | [Tools] Target embedding dimension detected from Pinecone: 3072
+2026-10-10 11:36:16 | INFO    | [Tools] Initialized active embedding model: 'gemini-embedding-001' (dim=3072)
+2026-10-10 11:36:19 | INFO    | [Tools] Retrieved 2 matches from Pinecone.
+2026-10-10 11:36:19 | INFO    | [Tools] Executing search_ranker tool for query: 'Can NovaTech build a chatbot using our company documents?'
+2026-10-10 11:36:20 | INFO    | [Tools] Retrieved 2 matches from Pinecone.
+2026-10-10 11:36:20 | INFO    | [Tools] Executing lead_saver tool for lead: name='Alex Mercer', email='alex.mercer@innovatetech.example', service='Business AI Assistant (₹60,000)'
+2026-10-10 11:36:21 | INFO    | [Tools] Connected to MongoDB Atlas: Database='novatech_db', Collection='leads'
+2026-10-10 11:36:21 | INFO    | [Tools] Successfully saved lead into MongoDB Atlas with ID: 6ac9d5ddff698ca2e12698ff
+2026-10-10 11:41:26 | INFO    | [Tools] Executing search_ranker tool for query: 'What are the indicative prices for NovaTech AI chatbots?'
+2026-10-10 11:41:27 | INFO    | [Tools] Connected to Pinecone index: 'novetech-knowledge'
+2026-10-10 11:41:29 | INFO    | [Tools] Target embedding dimension detected from Pinecone: 3072
+2026-10-10 11:41:31 | INFO    | [Tools] Initialized active embedding model: 'gemini-embedding-001' (dim=3072)
+2026-10-10 11:41:33 | INFO    | [Tools] Retrieved 2 matches from Pinecone.
+2026-10-10 11:41:33 | INFO    | [Tools] Executing search_ranker tool for query: 'Can NovaTech build a chatbot using our company documents?'
+2026-10-10 11:41:34 | INFO    | [Tools] Retrieved 2 matches from Pinecone.
+2026-10-10 11:41:34 | INFO    | [Tools] Executing lead_saver tool for lead: name='Alex Mercer', email='alex.mercer@innovatetech.example', service='Business AI Assistant (₹60,000)'
+2026-10-10 11:41:35 | INFO    | [Tools] Connected to MongoDB Atlas: Database='novatech_db', Collection='leads'
+2026-10-10 11:41:36 | INFO    | [Tools] Successfully saved lead into MongoDB Atlas with ID: 6ac9d717032747e050e4159e
+2026-10-10 11:44:56 | INFO    | [Agents] LangGraph Support Agent successfully compiled with checkpointing.
+2026-10-10 11:45:16 | INFO    | [Agents] Orchestrator evaluating user message: 'What are the indicative prices for your AI chatbots?...'
+2026-10-10 11:45:23 | WARNING | [Agents] Orchestrator JSON parsing fallback ('list' object has no attribute 'strip'). Using heuristic routing.
+2026-10-10 11:45:28 | INFO    | [Agents] Executing QnA tool 'search_ranker' with args: {'query': 'indicative pricing packages AI chatbot'}
+2026-10-10 11:45:28 | INFO    | [Tools] Executing search_ranker tool for query: 'indicative pricing packages AI chatbot'
+2026-10-10 11:45:29 | INFO    | [Tools] Connected to Pinecone index: 'novetech-knowledge'
+2026-10-10 11:45:30 | INFO    | [Tools] Target embedding dimension detected from Pinecone: 3072
+2026-10-10 11:45:31 | INFO    | [Tools] Initialized active embedding model: 'gemini-embedding-001' (dim=3072)
+2026-10-10 11:45:34 | INFO    | [Tools] Retrieved 3 matches from Pinecone.
+2026-10-10 11:47:33 | INFO    | [Agents] LangGraph Support Agent successfully compiled with checkpointing.
+2026-10-10 11:47:55 | INFO    | [Agents] Orchestrator evaluating user message: 'What are the indicative prices for your AI chatbots?...'
+2026-10-10 11:47:58 | WARNING | [Agents] Orchestrator JSON parsing fallback ('list' object has no attribute 'strip'). Using heuristic routing.
+2026-10-10 11:48:00 | INFO    | [Agents] Executing QnA tool 'search_ranker' with args: {'query': 'indicative pricing AI chatbots plans'}
+2026-10-10 11:48:00 | INFO    | [Tools] Executing search_ranker tool for query: 'indicative pricing AI chatbots plans'
+2026-10-10 11:48:02 | INFO    | [Tools] Connected to Pinecone index: 'novetech-knowledge'
+2026-10-10 11:48:03 | INFO    | [Tools] Target embedding dimension detected from Pinecone: 3072
+2026-10-10 11:48:04 | INFO    | [Tools] Initialized active embedding model: 'gemini-embedding-001' (dim=3072)
+2026-10-10 11:48:07 | INFO    | [Tools] Retrieved 3 matches from Pinecone.
+2026-10-10 11:48:53 | INFO    | [Agents] Orchestrator evaluating user message: 'I'm interested in building a chatbot for my company, can you...'
+2026-10-10 11:49:01 | WARNING | [Agents] Orchestrator JSON parsing fallback ('list' object has no attribute 'strip'). Using heuristic routing.
+2026-10-10 11:53:52 | INFO    | [Agents] LangGraph Support Agent successfully compiled with checkpointing.
+2026-10-10 11:53:57 | INFO    | [Agents] LangGraph Support Agent successfully compiled with checkpointing.
